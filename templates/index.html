@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smite Stats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://sm.ign.com/t/ign_br/blogroll/s/smite-xbox/smite-xbox-one-review_v9fs.1280.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #000000;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #000000;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+<h1>Smite Stats</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Nome</th>
+        <th>KDA</th>
+        <th>Estatísticas</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for stat in stats %}
+    <tr>
+        <td>{{ stat.name }}</td>
+        <td>{{ stat.kda }}</td>
+        <td>{{ stat.stats }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
