@@ -1,4 +1,4 @@
-# README
+# SmiteStats
 
 Este é um aplicativo web simples desenvolvido em Python usando o framework Flask para recuperar e exibir estatísticas do jogo Smite de um jogador específico. Ele utiliza web scraping para extrair informações do perfil do jogador no site [smite.guru](https://smite.guru).
 
